@@ -1,6 +1,7 @@
 <H1>Simulated Annealing Algorithm for the Multiple Choice Multidimensional Knapsack Problem</H1>
 
 <i><h3>Shalin Shah</h3></i>
+<a href="https://zenodo.org/badge/latestdoi/134318963"><img src="https://zenodo.org/badge/134318963.svg" alt="DOI"></a>
 
 <P>Implementation of simulated annealing algorithm for the multiple choice  multidimensional knapsack problem. The multiple choice knapsack problem has <I>n</I> groups of items and <I>m</I> constraints. The objective is to choose one item from each group such that the total value (profit) is maximized while all of the m constraints are satisfied. </P>
 
