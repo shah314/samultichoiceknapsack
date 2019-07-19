@@ -76,12 +76,12 @@ class GreedyObject
          this->index = copy.index;
       }
 
-      bool operator < (const GreedyObject & right)
+      bool operator < (const GreedyObject & right) const
       {
       	return this->ratio > right.ratio;
       }
 
-      bool operator > (const GreedyObject & right)
+      bool operator > (const GreedyObject & right) const
       {
       	return this->ratio < right.ratio;
       }
@@ -178,9 +178,6 @@ void processData()
 	tok = strtok(NULL, " ");
 	NUMBER_CONSTRAINTS = atoi(tok);
 
-	//printf("%d\n", NUMBER_GROUPS);
-	//printf("%d\n", NUMBER_CONSTRAINTS);
-	//printf("%d\n", NUMBER_OBJECTS_IN_GROUP);
 	int i = 0;
    fgets(line, 1000, file);
 
