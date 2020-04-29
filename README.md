@@ -11,7 +11,7 @@
 <P>Instances are available here - ftp://cermsem.univ-paris1.fr/pub/CERMSEM/hifi/MMKP/MMKP.html</p>
 <b>Cite this code:</b>
 <pre>
-@misc{shah2014simulated,
+@misc{shah2014mcknapsack,
   title={Simulated Annealing Algorithm for the Multiple Choice Multidimensional Knapsack Problem},
   author={Shah, Shalin},
   year={2014}
