@@ -25,7 +25,7 @@ Email: shah.shalin@gmail.com
 #include <stdio.h>
 #include <algorithm>
 #include <vector>
-
+#include <string.h>
 using namespace std;
 
 /* Generate a random number in [min, max] */
@@ -159,18 +159,22 @@ GreedyObject ** RATIO_OBJECTS;
  	The data is in the format specified by the following URL:
    ftp://cermsem.univ-paris1.fr/pub/CERMSEM/hifi/MMKP/MMKP.html
 */
-void processData()
+void processData(char * filename)
 {
  	FILE * file;
-	file = fopen("data.dat", "r");
+	file = fopen(filename, "r");
    if(file == NULL)
    {
-   	printf("data.dat File Not Found in Current Directory.");
+   		printf("File Not Found in Current Directory.");
       exit(1);
    }
 
 	char * line = new char [1000];
 	fgets(line, 1000, file);
+	while(strlen(line) <= 1)
+	{
+			fgets(line, 1000, file);
+	}
 	char * tok = strtok(line, " ");
    NUMBER_GROUPS = atoi(tok);
 	tok = strtok(NULL, " ");
@@ -638,14 +642,24 @@ MNode greedyAlgorithm()
    return node;
 }
 
-int main(void)
+int main(int argc, char *argv[])
 {
    /* Initialize the random number generator */
 	srand(time(NULL));
 
+	if(argc < 3)
+	{
+			printf("\nUsage: ./a.out filename number_iterations\n\n");
+			exit(0);
+	}
+
+	printf("Filename: %s\n", argv[1]);
+	printf("Iterations: %s\n", argv[2]);
+
    /* Process the data from the format specified by the data file
     	See comments on the processData() function */
-	processData();
+	processData(argv[1]);
+	ANNEALING_ITERATIONS = atoi(argv[2]);
 
    /* How much time to spend in finding a valid solution before quitting? */
    VALID_SOLUTION_ITERATIONS = NUMBER_GROUPS * NUMBER_OBJECTS_IN_GROUP;
