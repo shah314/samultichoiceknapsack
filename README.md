@@ -6,7 +6,7 @@
 <P>Implementation of simulated annealing algorithm for the multiple choice  multidimensional knapsack problem. The multiple choice knapsack problem has <I>n</I> groups of items and <I>m</I> constraints. The objective is to choose one item from each group such that the total value (profit) is maximized while all of the m constraints are satisfied. </P>
 
 <P>Change the global variable ANNEALING_ITERATIONS to change the number of iterations that the algorithm runs for.</P>
-<P>Instances are available here:<br>
+<P>Instances are available at the following FTP site and also in the instances folder (please rename an instance to data.dat so that the algorithm can find it):<br>
 ftp://cermsem.univ-paris1.fr/pub/CERMSEM/hifi/MMKP/</p>
 <P>Usage:<BR>The algorithm requires a "data.dat" file in the current directory in the format specified by:<br>
 ftp://cermsem.univ-paris1.fr/pub/CERMSEM/hifi/MMKP/MMKP.html</P>
