@@ -26,7 +26,8 @@ ftp://cermsem.univ-paris1.fr/pub/CERMSEM/hifi/MMKP/MMKP.html</br>
 @misc{shah2014mcknapsack,
   title={Simulated Annealing Algorithm for the Multiple Choice Multidimensional Knapsack Problem},
   author={Shah, Shalin},
-  year={2014}
+  year={2020},
+  DOI={10.5281/zenodo.3820939}
 }
 </pre>
 <b>Cited By:</b>
