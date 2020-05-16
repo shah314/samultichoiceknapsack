@@ -26,6 +26,7 @@ Email: shah.shalin@gmail.com
 #include <algorithm>
 #include <vector>
 #include <string.h>
+#include <ctime>
 using namespace std;
 
 /* Generate a random number in [min, max] */
