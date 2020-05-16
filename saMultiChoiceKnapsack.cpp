@@ -21,7 +21,6 @@ Author: Shalin Shah
 Email: shah.shalin@gmail.com
 
 */
-
 #include <stdio.h>
 #include <algorithm>
 #include <vector>
